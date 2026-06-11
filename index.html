@@ -21,10 +21,17 @@
         <section id="hero" class="hero">
             <div>
                 <div class="hero-eyebrow"><span></span>Disponible para nuevas oportunidades</div>
-                <h1>Natalia Fuquene<br><em>Desarrolladora multimedia</em></h1>
+                <div class="hero-profile">
+                    <div class="hero-avatar">
+                        <img src="foto.jpeg" alt="Natalia Fuquene" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="hero-avatar-placeholder"><i class="ti ti-user"></i></div>
+                    </div>
+                    <h1>Natalia Fuquene<br><em>Desarrolladora multimedia</em></h1>
+                </div>
                 <p class="hero-sub">Ingeniera en Multimedia con experiencia en Unity, VR/AR y experiencias interactivas multiplataforma. Del prototipo a la Play Store.</p>
                 <div class="hero-btns">
-                    <button class="btn btn-white"><i class="ti ti-download" aria-hidden="true"></i>Descargar CV</button>
+                    <a href="CV_Natalia.pdf" download class="btn btn-white">
+                    <i class="ti ti-download" aria-hidden="true"></i>Descargar CV</a>
                     <button class="btn btn-outline" onclick="goTo('proyectos',document.querySelectorAll('.p-nav a')[1])"><i class="ti ti-layout-grid" aria-hidden="true"></i>Proyectos</button>
                     <button class="btn btn-purple" onclick="goTo('contacto',document.querySelectorAll('.p-nav a')[3])"><i class="ti ti-mail" aria-hidden="true"></i>Contacto</button>
                 </div>
@@ -133,7 +140,9 @@
             <div class="contact-wrap">
                 <div class="contact-card"><i class="ti ti-mail" aria-hidden="true"></i><div><p class="cc-label">Correo</p><p class="cc-val">fuqueneariasnatalia@gmail.com</p></div></div>
                 <div class="contact-card"><i class="ti ti-phone" aria-hidden="true"></i><div><p class="cc-label">Teléfono</p><p class="cc-val">+57 305 918 5676</p></div></div>
-                <div class="contact-card"><i class="ti ti-brand-linkedin" aria-hidden="true"></i><div><p class="cc-label">LinkedIn</p><p class="cc-val">Ver perfil</p></div></div>
+                <a href="https://www.linkedin.com/in/natafu" target="_blank" class="contact-card">
+                <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
+                <div><p class="cc-label">LinkedIn</p><p class="cc-val">Ver perfil</p></div></a>
                 <div class="contact-card"><i class="ti ti-brand-github" aria-hidden="true"></i><div><p class="cc-label">GitHub</p><p class="cc-val">Ver repositorios</p></div></div>
             </div>
             <div class="cta-band">
