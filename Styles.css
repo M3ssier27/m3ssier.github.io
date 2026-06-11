@@ -1,6 +1,5 @@
-﻿body {
-}
-<style >
+﻿
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,6 +22,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--bg);
     color: var(--text);
+    overflow-x: hidden;
 }
 
 .wrap {
@@ -39,7 +39,8 @@ body {
     z-index: 10;
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 0 clamp(1rem,5vw,4rem)
+    padding: 0 clamp(1rem,5vw,4rem) ;
+    max-width: 100vw;
 }
 
     .p-nav::-webkit-scrollbar {
@@ -77,6 +78,49 @@ body {
     align-items: center
 }
 
+.hero-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: .9rem
+}
+
+.hero-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgba(127,119,221,0.5);
+    overflow: hidden;
+    flex-shrink: 0;
+    background: var(--surface);
+    position: relative
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.hero-avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(127,119,221,0.12)
+}
+
+.hero-avatar-placeholder i {
+    font-size: 32px;
+    color: #7F77DD
+}
+
+.hero-profile h1 {
+    margin-bottom: 0
+}
+
 .hero-eyebrow {
     display: inline-flex;
     align-items: center;
@@ -106,6 +150,10 @@ body {
     50% {
         opacity: .3
     }
+}
+.hero > *,
+.project-block > * {
+    min-width: 0;
 }
 
 .hero h1 {
@@ -171,7 +219,9 @@ body {
     border: none;
     white-space: nowrap
 }
-
+a.btn {
+    text-decoration: none;
+}
 .btn-white {
     background: #fff;
     color: #0e0e0e
@@ -321,7 +371,9 @@ body {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border);
-    background: var(--surface)
+    background: var(--surface);
+    min-width: 0;
+    width: 100%;
 }
 
 .carousel-track {
@@ -508,6 +560,10 @@ body {
         border-color: rgba(127,119,221,0.4)
     }
 
+    a.contact-card {
+    text-decoration: none;
+    color: inherit;
+    }
     .contact-card i {
         font-size: 20px;
         color: #7F77DD;
@@ -564,4 +620,3 @@ body {
     }
 }
 
-</style >
