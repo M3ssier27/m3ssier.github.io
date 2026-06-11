@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Fuquene</title>
+
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+
+    <nav class="p-nav">
+        <a class="active" onclick="goTo('hero',this)">Inicio</a>
+        <a onclick="goTo('proyectos',this)">Proyectos</a>
+        <a onclick="goTo('experiencia',this)">Experiencia</a>
+        <a onclick="goTo('contacto',this)">Contacto</a>
+    </nav>
+
+    <div class="wrap">
+
+        <section id="hero" class="hero">
+            <div>
+                <div class="hero-eyebrow"><span></span>Disponible para nuevas oportunidades</div>
+                <h1>Natalia Fuquene<br><em>Desarrolladora multimedia</em></h1>
+                <p class="hero-sub">Ingeniera en Multimedia con experiencia en Unity, VR/AR y experiencias interactivas multiplataforma. Del prototipo a la Play Store.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-white"><i class="ti ti-download" aria-hidden="true"></i>Descargar CV</button>
+                    <button class="btn btn-outline" onclick="goTo('proyectos',document.querySelectorAll('.p-nav a')[1])"><i class="ti ti-layout-grid" aria-hidden="true"></i>Proyectos</button>
+                    <button class="btn btn-purple" onclick="goTo('contacto',document.querySelectorAll('.p-nav a')[3])"><i class="ti ti-mail" aria-hidden="true"></i>Contacto</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-stat"><div class="hero-stat-num">2+</div><div class="hero-stat-label">Años de experiencia en desarrollo multimedia</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">3</div><div class="hero-stat-label">Proyectos publicados en Play Store y Meta Quest</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">VR · AR · 2D · 3D</div><div class="hero-stat-label">Plataformas y modalidades de desarrollo</div></div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <p class="sec-label">Habilidades técnicas</p>
+            <div class="skills-grid">
+                <span class="sk hot">Unity</span><span class="sk hot">C#</span><span class="sk hot">VR / AR</span><span class="sk hot">Meta Quest</span><span class="sk hot">WebGL</span><span class="sk hot">XR Interaction Toolkit</span><span class="sk">Python</span><span class="sk">HTML5 / CSS3</span><span class="sk">JavaScript</span><span class="sk">Git</span><span class="sk">Figma</span><span class="sk">Adobe Photoshop</span><span class="sk">Adobe Illustrator</span><span class="sk">Autodesk Maya</span><span class="sk">Jira</span><span class="sk">Visual Studio</span>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects-section">
+            <p class="sec-label">Proyectos</p>
+
+            <div class="project-block">
+                <div class="proj-info">
+                    <span class="proj-badge">Android · Puzzle · Unity</span>
+                    <p class="proj-title">El gansito dorado</p>
+                    <p class="proj-desc">Videojuego 3D de acertijos desarrollado individualmente en Unity. Implementa progresión narrativa basada en pistas obtenidas en niveles anteriores, sistemas de guardado local, diálogos interactivos y optimización para Android y WebGL.</p>
+                    <p class="proj-notes">Nota: Las imágenes y videos mostrados son demostraciones de mecánicas y funcionalidades desarrolladas por la autora. Algunos materiales corresponden a versiones adaptadas con fines de portafolio profesional.</p>
+                    <div class="proj-tags"><span class="proj-tag">Unity</span><span class="proj-tag">C#</span><span class="proj-tag">Android</span></div>
+                </div>
+                <div class="carousel" id="car0">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-video" aria-hidden="true"></i></div><p class="slide-label">Video del proyecto</p></div><span class="slide-num">1/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">2/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">3/3</span></div>
+                    </div>
+                    <button class="car-btn car-prev" onclick="slide('car0',-1)" aria-label="Anterior"><i class="ti ti-chevron-left"></i></button>
+                    <button class="car-btn car-next" onclick="slide('car0',1)" aria-label="Siguiente"><i class="ti ti-chevron-right"></i></button>
+                    <div class="car-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+
+            <div class="project-block">
+                <div class="proj-info">
+                    <span class="proj-badge">Meta Quest · XR · Unity</span>
+                    <p class="proj-title">Simulador de ventas a bordo</p>
+                    <p class="proj-desc">Simulador de servicio en Meta Quest con sistemas de pedidos, pagos e inventario usando XR Interaction Toolkit. Diseño integral de UX para entorno inmersivo.</p>
+                    <div class="proj-tags"><span class="proj-tag">Meta Quest</span><span class="proj-tag">XR Toolkit</span><span class="proj-tag">Unity</span></div>
+                </div>
+                <div class="carousel" id="car1">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-video" aria-hidden="true"></i></div><p class="slide-label">Video del proyecto</p></div><span class="slide-num">1/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">2/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">3/3</span></div>
+                    </div>
+                    <button class="car-btn car-prev" onclick="slide('car1',-1)" aria-label="Anterior"><i class="ti ti-chevron-left"></i></button>
+                    <button class="car-btn car-next" onclick="slide('car1',1)" aria-label="Siguiente"><i class="ti ti-chevron-right"></i></button>
+                    <div class="car-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+
+            <div class="project-block">
+                <div class="proj-info">
+                    <span class="proj-badge">2D · Accesibilidad · Unity</span>
+                    <p class="proj-title">Aventura inclusiva</p>
+                    <p class="proj-desc">Proyecto 2D enfocado en accesibilidad e inclusión. Sistemas de guardado e inventario dinámico adaptados a perfiles de usuario diversos.</p>
+                    <div class="proj-tags"><span class="proj-tag">Unity</span><span class="proj-tag">C#</span><span class="proj-tag">Accesibilidad</span></div>
+                </div>
+                <div class="carousel" id="car2">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-video" aria-hidden="true"></i></div><p class="slide-label">Video del proyecto</p></div><span class="slide-num">1/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">2/3</span></div>
+                        <div class="carousel-slide"><div class="slide-placeholder"><div class="slide-icon"><i class="ti ti-photo" aria-hidden="true"></i></div><p class="slide-label">Captura de pantalla</p></div><span class="slide-num">3/3</span></div>
+                    </div>
+                    <button class="car-btn car-prev" onclick="slide('car2',-1)" aria-label="Anterior"><i class="ti ti-chevron-left"></i></button>
+                    <button class="car-btn car-next" onclick="slide('car2',1)" aria-label="Siguiente"><i class="ti ti-chevron-right"></i></button>
+                    <div class="car-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="experiencia" class="exp-section">
+            <p class="sec-label">Experiencia</p>
+            <div class="exp-item">
+                <span class="exp-date">Abr 2026 – presente</span>
+                <div><p class="exp-role">Profesora de programación</p><p class="exp-co">Kodland</p><p class="exp-desc">Unity y Python para estudiantes de 8–17 años. Supervisión de proyectos 2D/3D.</p></div>
+            </div>
+            <div class="exp-item">
+                <span class="exp-date">Nov 2024 – Dic 2025</span>
+                <div><p class="exp-role">Desarrolladora</p><p class="exp-co">Prime Digital Consulting</p><p class="exp-desc">UI/UX multiplataforma. Meta Quest 2 y 3, Web AR. Publicación en Play Store.</p></div>
+            </div>
+            <div class="exp-item">
+                <span class="exp-date">May 2024 – Nov 2024</span>
+                <div><p class="exp-role">Pasante de desarrollo</p><p class="exp-co">Prime Digital Consulting</p><p class="exp-desc">Videojuegos 2D en C#. Sistemas de guardado, inventarios y animaciones.</p></div>
+            </div>
+            <div class="exp-item">
+                <span class="exp-date">2019 – 2025</span>
+                <div><p class="exp-role">Ingeniería en Multimedia</p><p class="exp-co">Universidad Militar Nueva Granada</p><p class="exp-desc">Reconocimiento a mejores pasantías 2025 · Inglés B2</p></div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <p class="sec-label">Contacto</p>
+            <div class="contact-wrap">
+                <div class="contact-card"><i class="ti ti-mail" aria-hidden="true"></i><div><p class="cc-label">Correo</p><p class="cc-val">fuqueneariasnatalia@gmail.com</p></div></div>
+                <div class="contact-card"><i class="ti ti-phone" aria-hidden="true"></i><div><p class="cc-label">Teléfono</p><p class="cc-val">+57 305 918 5676</p></div></div>
+                <div class="contact-card"><i class="ti ti-brand-linkedin" aria-hidden="true"></i><div><p class="cc-label">LinkedIn</p><p class="cc-val">Ver perfil</p></div></div>
+                <div class="contact-card"><i class="ti ti-brand-github" aria-hidden="true"></i><div><p class="cc-label">GitHub</p><p class="cc-val">Ver repositorios</p></div></div>
+            </div>
+            <div class="cta-band">
+                <p>¿Lista para crear experiencias interactivas juntos?</p>
+                <button class="btn btn-white" style="margin:0 auto"><i class="ti ti-send" aria-hidden="true"></i>Enviar mensaje</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/Main.js"></script>
+
+</body>
+</html>
